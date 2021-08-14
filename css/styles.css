@@ -56,8 +56,8 @@ a {
 
 .headerIndex {
   display: flex;
-  height: 90vh;
-  width: 100vw;
+  height: 92vh;
+  width: 99vw;
   background-image: url(https://cdn.hopculture.com/wp-content/uploads/2017/11/mixologist-LEAD.jpg);
   background-size: cover;
   justify-content: left;
@@ -65,8 +65,8 @@ a {
 
 .headerGarnish {
   display: flex;
-  height: 90vh;
-  width: 100vw;
+  height: 92vh;
+  width: 99vw;
   background-image: url(https://cocktail-society.com/wp-content/uploads/elementor/thumbs/cocktail-pick-cherry-garnish-p7cdkmh8lae7bjpbg3vc5xhhb57ypg2xviekn4tnvs.jpg);
   background-size: cover;
   justify-content: left;
@@ -74,9 +74,9 @@ a {
 
 .headerCursos {
   display: flex;
-  height: 90vh;
-  width: 100vw;
-  background-image: url(https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1620,h_1080,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/vqalbzlunpapi8ctouad/MixologyClassbyCasaBacard%C3%ADinSitges.webp);
+  height: 92vh;
+  width: 99vw;
+  background-image: url(https://i.postimg.cc/tRmNj9fz/Bartender-Academy.jpg);
   background-size: cover;
   justify-content: left;
   align-items: center;
@@ -84,6 +84,15 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 11vh;
   margin: 3%; }
+
+  .headerPractice {
+    display: flex;
+    height: 92vh;
+  width: 99vw;
+    background-image: url(https://i.postimg.cc/x8FY1XHY/Ailooo.jpg);
+    background-size: cover;
+    justify-content: left;
+    align-items: center; }
 
 .formControl {
   text-align: center;
@@ -189,7 +198,12 @@ a {
   grid-template-columns: 250px 250px 250px 250px 250px;
   grid-template-rows: 250px 250px 250px 250px 250px 250px;
   gap: 6vw 8vh;
-  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
+  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index"
+ "foto1Index foto1Index foto1Index texto1Index texto1Index"
+ "foto1Index foto1Index foto1Index texto1Index texto1Index"
+ "texto2Index texto2Index foto2Index foto2Index foto2Index"
+ "texto2Index texto2Index foto2Index foto2Index foto2Index"
+ "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
 
 .foto1Index {
   grid-area: foto1Index;
@@ -227,7 +241,9 @@ a {
   display: grid;
   grid-template-columns: 350px 185px 185px 215px 215px;
   grid-template-rows: 350px 185px 185px;
-  grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
+  grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6"
+ "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6"
+ "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   padding-top: 2rem; }
