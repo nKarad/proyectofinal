@@ -1,6 +1,3 @@
-html {
-  height: 100%; }
-
 header {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -8,15 +5,19 @@ header {
   flex-direction: row;
   position: fixed;
   width: 100%;
-  background: rgba(1, 27, 3, 0.8); }
+  background: rgba(1, 27, 3, 0.8);
+  z-index: 1; }
 
 body {
   display: flex;
   flex-direction: column;
   background-color: transparent;
   min-height: 100vh;
-  background-color: #010703;
+  background-color: #021f0c;
   align-items: center; }
+
+html {
+  height: 100%; }
 
 p {
   font-family: "Montserrat", sans-serif;
@@ -25,17 +26,12 @@ p {
 h1 {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 11vh;
+  font-size: 9vh;
   margin: 3%; }
 
 h2 {
-  font-weight: 600; }
-
-@media screen and (max-width: 500px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(180deg, black 68%, #7e3333 86%); } }
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif; }
 
 footer {
   width: 100%;
@@ -74,34 +70,27 @@ a {
 
 .headerCursos {
   display: flex;
+  display: flex;
   height: 92vh;
   width: 99vw;
   background-image: url(https://i.postimg.cc/tRmNj9fz/Bartender-Academy.jpg);
   background-size: cover;
   justify-content: left;
-  align-items: center;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 11vh;
-  margin: 3%; }
+  align-items: center; }
 
-  .headerPractice {
-    display: flex;
-    height: 92vh;
+.headerPractice {
+  display: flex;
+  height: 92vh;
   width: 99vw;
-    background-image: url(https://i.postimg.cc/x8FY1XHY/Ailooo.jpg);
-    background-size: cover;
-    justify-content: left;
-    align-items: center; }
+  background-image: url(https://i.postimg.cc/x8FY1XHY/Ailooo.jpg);
+  background-size: cover;
+  justify-content: left;
+  align-items: center; }
 
 .formControl {
   text-align: center;
   margin: 0;
   padding: 0; }
-
-.card {
-  color: blanchedalmond;
-  background-color: #01130a; }
 
 .bodyForm {
   color: blanchedalmond;
@@ -135,9 +124,17 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly; }
-  .videoFlex .videoDiv {
-    background-color: #011408; }
+  justify-content: space-evenly;
+  background-color: #011408; }
+  .videoFlex .videoPractica {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    margin: 0px;
+    background-color: #011601; }
+    .videoFlex .videoPractica .colorTituloVideo {
+      color: blanchedalmond; }
 
 .form {
   font-family: "Montserrat", sans-serif;
@@ -156,23 +153,9 @@ a {
   display: inline;
   margin: 20px;
   font-size: 30px; }
-  .inicio a:hover {
-    color: wheat; }
 
-.copasIndex {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.videoPractica {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  padding: 30px;
-  margin: 0px; }
-
-.colorTituloVideo {
-  color: blanchedalmond; }
+.inicio a:hover {
+  color: wheat; }
 
 .materialesBasicos {
   margin-top: 150px;
@@ -190,105 +173,11 @@ a {
   align-items: center;
   justify-content: space-evenly; }
 
-.gridIndex {
-  display: flex;
-  justify-content: center;
-  display: grid;
-  margin-top: 10vh;
-  grid-template-columns: 250px 250px 250px 250px 250px;
-  grid-template-rows: 250px 250px 250px 250px 250px 250px;
-  gap: 6vw 8vh;
-  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index"
- "foto1Index foto1Index foto1Index texto1Index texto1Index"
- "foto1Index foto1Index foto1Index texto1Index texto1Index"
- "texto2Index texto2Index foto2Index foto2Index foto2Index"
- "texto2Index texto2Index foto2Index foto2Index foto2Index"
- "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
-
-.foto1Index {
-  grid-area: foto1Index;
-  background-image: url(https://cdn.trendhunterstatic.com/thumbs/luxury-drinks.jpeg);
-  background-position: center;
-  background-size: cover; }
-
-.texto1Index {
-  grid-area: texto1Index;
-  background-color: rgba(0, 19, 8, 0.678);
-  background-position: center;
-  background-size: cover; }
-
-.foto2Index {
-  grid-area: foto2Index;
-  background-image: url(https://i.pinimg.com/originals/46/8c/61/468c61ea235dd7efb79e9e8778664817.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.texto2Index {
-  grid-area: texto2Index;
-  background-color: rgba(0, 19, 8, 0.678);
-  background-position: center;
-  background-size: cover; }
-
 .estiloTexto {
   color: blanchedalmond;
   font-family: "Montserrat", sans-serif;
   font-size: 3.5vh;
   font-weight: 500; }
-
-.gridGarnish {
-  display: flex;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 350px 185px 185px 215px 215px;
-  grid-template-rows: 350px 185px 185px;
-  grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6"
- "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6"
- "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  padding-top: 2rem; }
-
-.fotoGrid1 {
-  grid-area: fotoGrid1;
-  background-image: url(https://images.squarespace-cdn.com/content/v1/5402e23ce4b0a7034afad3a2/1558515375264-KUVECOQDI4J7BVKVRJJC/Gin%2BTonic%2BGarnishes.png);
-  background-position: center;
-  background-size: cover; }
-
-.fotoGrid2 {
-  grid-area: fotoGrid2;
-  background-image: url(https://cdn.trendhunterstatic.com/thumbs/bloody-mary.jpeg);
-  background-position: center;
-  background-size: cover; }
-
-.fotoGrid3 {
-  grid-area: fotoGrid3;
-  background-image: url(https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/9/23/0/Original_BPF_Holiday-House_Entertaining_5-Cocktail-Garnishes_LEAD.jpg.rend.hgtvcom.966.725.suffix/1443025896226.jpeg);
-  background-position: center;
-  background-size: cover; }
-
-.fotoGrid4 {
-  grid-area: fotoGrid4;
-  background-image: url(https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2010/12/29/0/Original_Fine-Living-Cocktails-Cool-Cubama-2_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1400958982743.jpeg);
-  background-position: center;
-  background-size: cover; }
-
-.fotoGrid5 {
-  grid-area: fotoGrid5;
-  background-image: url(https://www.liquor.com/thmb/eQlWQiNJ-4EiL9VkUzrDkLfHtS4=/735x0/garnish-720x720-98106bdab16c47c4a3d11c52cb1f1f4d.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.fotoGrid6 {
-  grid-area: fotoGrid6;
-  background-image: url(https://images.food52.com/0rpH5FC38G6munjSHgIIV-OCwNw=/60e320db-f332-4284-9dd6-d471594912a3--14796465799_0cc559cbc2_b.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.fotoGrid7 {
-  grid-area: fotoGrid7;
-  background-image: url(https://dg38gzoej82xh.cloudfront.net/sites/default/files/styles/image_gallery_xl/public/images/node/article/22-different-cocktails-garnishes.jpg?itok=O5fN3kze);
-  background-position: center;
-  background-size: cover; }
 
 .estiloForm {
   background-color: transparent;
@@ -315,8 +204,190 @@ a {
 .submit {
   color: white; }
 
-.letraBootstrap {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 11vh;
-  margin: 3%; }
+.estiloCarta {
+  padding: 5%;
+  padding-left: 15%;
+  display: inline-flex; }
+  .estiloCarta .card {
+    width: 35rem;
+    display: grid;
+    grid-template-columns: 35rem;
+    grid-template-rows: 280px 400px 50px;
+    grid-template-areas: "image" "texto" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+    text-align: center; }
+    .estiloCarta .card .card-image {
+      grid-area: image;
+      background-image: url(https://www.ebsmatchstaff.com/media/blog_post_previews/Bartender_mentor2.jpg);
+      background-size: cover;
+      border-radius: 13px; }
+    .estiloCarta .card .card-image2 {
+      grid-area: image;
+      background-image: url(https://www.baque.com/wp-content/uploads/2017/12/como-identificar-el-cafe-de-barista.jpg);
+      background-size: cover;
+      border-radius: 13px; }
+    .estiloCarta .card .card-image3 {
+      grid-area: image;
+      background-image: url(https://s.yimg.com/cd/resizer/2.0/FIT_TO_WIDTH-w1200/4e6f75fc9eb234540a17fa48a5e2f3130ae3bfc4.jpg);
+      background-size: cover;
+      border-radius: 13px; }
+    .estiloCarta .card .card-image4 {
+      grid-area: image;
+      background-image: url(https://mixologo.net/wp-content/uploads/2020/02/iStock-939006044-scaled.jpg);
+      background-size: cover;
+      border-radius: 13px; }
+  .estiloCarta .card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    transition-delay: 0.1s;
+    transition: 0.5s ease; }
+  .estiloCarta .individual {
+    margin-right: 7rem; }
+  .estiloCarta .card-text {
+    grid-area: texto;
+    margin: 25px; }
+    .estiloCarta .card-text .card-text p {
+      color: grey;
+      font-size: 25px; }
+    .estiloCarta .card-text .card-text h2 {
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+      margin-top: 10px;
+      font-size: 35px; }
+    .estiloCarta .card-text .fecha {
+      font-family: "Montserrat", sans-serif;
+      color: #005a29;
+      font-size: 18px; }
+  .estiloCarta .card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #005a29;
+    font-family: "Montserrat", sans-serif; }
+    .estiloCarta .card-stats .stat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      padding: 10px; }
+
+.gridGarnish {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 350px 185px 185px 215px 215px;
+  grid-template-rows: 350px 185px 185px;
+  grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-top: 2rem; }
+  .gridGarnish .fotoGrid1:hover {
+    opacity: 0.5;
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease; }
+  .gridGarnish .fotoGrid2:hover {
+    opacity: 0.5;
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease; }
+  .gridGarnish .fotoGrid3:hover {
+    opacity: 0.5;
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease; }
+  .gridGarnish .fotoGrid4:hover {
+    opacity: 0.5;
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease; }
+  .gridGarnish .fotoGrid5:hover {
+    opacity: 0.5;
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease; }
+  .gridGarnish .fotoGrid6:hover {
+    opacity: 0.5;
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease; }
+  .gridGarnish .fotoGrid7:hover {
+    opacity: 0.5;
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease; }
+  .gridGarnish .fotoGrid1 {
+    grid-area: fotoGrid1;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5402e23ce4b0a7034afad3a2/1558515375264-KUVECOQDI4J7BVKVRJJC/Gin%2BTonic%2BGarnishes.png);
+    background-position: center;
+    background-size: cover; }
+  .gridGarnish .fotoGrid2 {
+    grid-area: fotoGrid2;
+    background-image: url(https://cdn.trendhunterstatic.com/thumbs/bloody-mary.jpeg);
+    background-position: center;
+    background-size: cover; }
+  .gridGarnish .fotoGrid3 {
+    grid-area: fotoGrid3;
+    background-image: url(https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/9/23/0/Original_BPF_Holiday-House_Entertaining_5-Cocktail-Garnishes_LEAD.jpg.rend.hgtvcom.966.725.suffix/1443025896226.jpeg);
+    background-position: center;
+    background-size: cover; }
+  .gridGarnish .fotoGrid4 {
+    grid-area: fotoGrid4;
+    background-image: url(https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2010/12/29/0/Original_Fine-Living-Cocktails-Cool-Cubama-2_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1400958982743.jpeg);
+    background-position: center;
+    background-size: cover; }
+  .gridGarnish .fotoGrid5 {
+    grid-area: fotoGrid5;
+    background-image: url(https://www.liquor.com/thmb/eQlWQiNJ-4EiL9VkUzrDkLfHtS4=/735x0/garnish-720x720-98106bdab16c47c4a3d11c52cb1f1f4d.jpg);
+    background-position: center;
+    background-size: cover; }
+  .gridGarnish .fotoGrid6 {
+    grid-area: fotoGrid6;
+    background-image: url(https://images.food52.com/0rpH5FC38G6munjSHgIIV-OCwNw=/60e320db-f332-4284-9dd6-d471594912a3--14796465799_0cc559cbc2_b.jpg);
+    background-position: center;
+    background-size: cover; }
+  .gridGarnish .fotoGrid7 {
+    grid-area: fotoGrid7;
+    background-image: url(https://dg38gzoej82xh.cloudfront.net/sites/default/files/styles/image_gallery_xl/public/images/node/article/22-different-cocktails-garnishes.jpg?itok=O5fN3kze);
+    background-position: center;
+    background-size: cover; }
+
+.gridIndex {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  margin-top: 10vh;
+  grid-template-columns: 220px 220px 220px 220px 220px;
+  grid-template-rows: 220px 220px 220px 220px 220px 220px;
+  gap: 6vw 8vh;
+  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
+
+.foto1Index {
+  grid-area: foto1Index;
+  background-image: url(https://cdn.trendhunterstatic.com/thumbs/luxury-drinks.jpeg);
+  background-position: center;
+  background-size: cover; }
+
+.texto1Index {
+  grid-area: texto1Index;
+  background-color: rgba(0, 19, 8, 0.678);
+  background-position: center;
+  background-size: cover; }
+
+.foto2Index {
+  grid-area: foto2Index;
+  background-image: url(https://i.pinimg.com/originals/46/8c/61/468c61ea235dd7efb79e9e8778664817.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.texto2Index {
+  grid-area: texto2Index;
+  background-color: rgba(0, 19, 8, 0.678);
+  background-position: center;
+  background-size: cover; }

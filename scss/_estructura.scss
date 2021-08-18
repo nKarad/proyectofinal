@@ -1,0 +1,103 @@
+header {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  background: rgba(1, 27, 3, 0.8);
+  z-index: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  min-height: 100vh;
+  background-color: #021f0c;
+  align-items: center;
+}
+
+html {
+  height: 100%;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 9vh;
+  margin: 3%;
+}
+
+h2 {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif
+}
+
+footer {
+    width: 100%;
+    background-color: #0e0d0d;
+    margin-top: auto;
+    color: white;
+    text-align-last: right;
+    padding-right: 10px;
+    height: auto;
+    margin-bottom: 7px;
+  }
+  
+  main {
+    padding-top: 80px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+
+.headerIndex {
+  display: flex;
+  height: 92vh;
+  width: 99vw;
+  background-image: url(https://cdn.hopculture.com/wp-content/uploads/2017/11/mixologist-LEAD.jpg);
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+}
+
+.headerGarnish {
+  display: flex;
+  height: 92vh;
+  width: 99vw;
+  background-image: url(https://cocktail-society.com/wp-content/uploads/elementor/thumbs/cocktail-pick-cherry-garnish-p7cdkmh8lae7bjpbg3vc5xhhb57ypg2xviekn4tnvs.jpg);
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+}
+
+.headerCursos {
+  display: flex;
+  display: flex;
+  height: 92vh;
+  width: 99vw;
+  background-image: url(https://i.postimg.cc/tRmNj9fz/Bartender-Academy.jpg);
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+}
+
+.headerPractice {
+  display: flex;
+  height: 92vh;
+  width: 99vw;
+  background-image: url(https://i.postimg.cc/x8FY1XHY/Ailooo.jpg);
+  background-size: cover;
+  justify-content: left;
+  align-items: center;
+}
+
