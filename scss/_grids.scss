@@ -1,8 +1,9 @@
 // Cards de cursos
 
 .estiloCarta {
+  padding: 5%;
+  padding-left: 15%;
   display: flex;
-  justify-content: center;
 
   .card {
     width: 35rem;
@@ -108,12 +109,46 @@
   grid-row-gap: 20px;
   padding-top: 2rem;
 
-  .fotoGrid1:hover {
-    opacity: 0.5;
+  .fotoGrid1 {
+    grid-area: fotoGrid1;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5402e23ce4b0a7034afad3a2/1558515375264-KUVECOQDI4J7BVKVRJJC/Gin%2BTonic%2BGarnishes.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .fotoGrid1:hover::after {
     color: #fae9c9;
     transition-delay: 0.1s;
     transition: 0.5s ease;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
   }
+  
+  .textoGridHover {
+    color: #fff;
+    padding: 30px;
+    opacity: 0;
+  }
+  
+  .fotoGrid1:hover .textoGridHover {
+    opacity: 1;
+    transition: all 2s;
+  }
+
+
+
 
   .fotoGrid2:hover {
     opacity: 0.5;
@@ -157,12 +192,7 @@
     transition: 0.5s ease;
   }
 
-  .fotoGrid1 {
-    grid-area: fotoGrid1;
-    background-image: url(https://images.squarespace-cdn.com/content/v1/5402e23ce4b0a7034afad3a2/1558515375264-KUVECOQDI4J7BVKVRJJC/Gin%2BTonic%2BGarnishes.png);
-    background-position: center;
-    background-size: cover;
-  }
+
 
   .fotoGrid2 {
     grid-area: fotoGrid2;

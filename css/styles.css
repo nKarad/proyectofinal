@@ -207,7 +207,7 @@ a {
 .estiloCarta {
   padding: 5%;
   padding-left: 15%;
-  display: inline-flex; }
+  display: flex; }
   .estiloCarta .card {
     width: 35rem;
     display: grid;
@@ -283,15 +283,42 @@ a {
   display: grid;
   grid-template-columns: 350px 185px 185px 215px 215px;
   grid-template-rows: 350px 185px 185px;
-  grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
+  grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6"
+ "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6"
+ "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   padding-top: 2rem; }
-  .gridGarnish .fotoGrid1:hover {
-    opacity: 0.5;
+  .gridGarnish .fotoGrid1 {
+    grid-area: fotoGrid1;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5402e23ce4b0a7034afad3a2/1558515375264-KUVECOQDI4J7BVKVRJJC/Gin%2BTonic%2BGarnishes.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; }
+  .gridGarnish .fotoGrid1:hover::after {
     color: #fae9c9;
     transition-delay: 0.1s;
-    transition: 0.5s ease; }
+    transition: 0.5s ease;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .gridGarnish .textoGridHover {
+    color: #fff;
+    padding: 30px;
+    opacity: 0; }
+  .gridGarnish .fotoGrid1:hover .textoGridHover {
+    opacity: 1;
+    transition: all 2s; }
   .gridGarnish .fotoGrid2:hover {
     opacity: 0.5;
     color: #fae9c9;
@@ -322,11 +349,6 @@ a {
     color: #fae9c9;
     transition-delay: 0.1s;
     transition: 0.5s ease; }
-  .gridGarnish .fotoGrid1 {
-    grid-area: fotoGrid1;
-    background-image: url(https://images.squarespace-cdn.com/content/v1/5402e23ce4b0a7034afad3a2/1558515375264-KUVECOQDI4J7BVKVRJJC/Gin%2BTonic%2BGarnishes.png);
-    background-position: center;
-    background-size: cover; }
   .gridGarnish .fotoGrid2 {
     grid-area: fotoGrid2;
     background-image: url(https://cdn.trendhunterstatic.com/thumbs/bloody-mary.jpeg);
@@ -366,7 +388,12 @@ a {
   grid-template-columns: 220px 220px 220px 220px 220px;
   grid-template-rows: 220px 220px 220px 220px 220px 220px;
   gap: 6vw 8vh;
-  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
+  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index"
+ "foto1Index foto1Index foto1Index texto1Index texto1Index"
+ "foto1Index foto1Index foto1Index texto1Index texto1Index"
+ "texto2Index texto2Index foto2Index foto2Index foto2Index"
+ "texto2Index texto2Index foto2Index foto2Index foto2Index"
+ "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
 
 .foto1Index {
   grid-area: foto1Index;
@@ -391,3 +418,5 @@ a {
   background-color: rgba(0, 19, 8, 0.678);
   background-position: center;
   background-size: cover; }
+
+  
