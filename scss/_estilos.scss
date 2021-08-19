@@ -10,8 +10,10 @@
 }
 
 .menuPrincipal {
-  display: inline-block;
+  display: flex ;
+  z-index: 1;
 }
+.listaCursos { font-family: "Montserrat", sans-serif; font-size: 1.5rem;}
 
 .flexpadre {
   display: flex;
@@ -57,6 +59,8 @@
   }
 }
 
+.textoGridHover { font-family: "Montserrat", sans-serif;}
+
 .form {
   font-family: "Montserrat", sans-serif;
   width: 500px;
@@ -75,7 +79,7 @@
 .inicio {
   display: inline;
   margin: 20px;
-  font-size: 30px;
+  font-size: 24px;
 }
 .inicio a:hover {
   color: wheat;

@@ -97,7 +97,12 @@ a {
   background-color: #01130a; }
 
 .menuPrincipal {
-  display: inline-block; }
+  display: flex;
+  z-index: 1; }
+
+.listaCursos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem; }
 
 .flexpadre {
   display: flex;
@@ -136,6 +141,9 @@ a {
     .videoFlex .videoPractica .colorTituloVideo {
       color: blanchedalmond; }
 
+.textoGridHover {
+  font-family: "Montserrat", sans-serif; }
+
 .form {
   font-family: "Montserrat", sans-serif;
   width: 500px;
@@ -152,7 +160,7 @@ a {
 .inicio {
   display: inline;
   margin: 20px;
-  font-size: 30px; }
+  font-size: 24px; }
 
 .inicio a:hover {
   color: wheat; }
@@ -283,9 +291,7 @@ a {
   display: grid;
   grid-template-columns: 350px 185px 185px 215px 215px;
   grid-template-rows: 350px 185px 185px;
-  grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6"
- "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6"
- "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
+  grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   padding-top: 2rem; }
@@ -319,66 +325,162 @@ a {
   .gridGarnish .fotoGrid1:hover .textoGridHover {
     opacity: 1;
     transition: all 2s; }
-  .gridGarnish .fotoGrid2:hover {
-    opacity: 0.5;
-    color: #fae9c9;
-    transition-delay: 0.1s;
-    transition: 0.5s ease; }
-  .gridGarnish .fotoGrid3:hover {
-    opacity: 0.5;
-    color: #fae9c9;
-    transition-delay: 0.1s;
-    transition: 0.5s ease; }
-  .gridGarnish .fotoGrid4:hover {
-    opacity: 0.5;
-    color: #fae9c9;
-    transition-delay: 0.1s;
-    transition: 0.5s ease; }
-  .gridGarnish .fotoGrid5:hover {
-    opacity: 0.5;
-    color: #fae9c9;
-    transition-delay: 0.1s;
-    transition: 0.5s ease; }
-  .gridGarnish .fotoGrid6:hover {
-    opacity: 0.5;
-    color: #fae9c9;
-    transition-delay: 0.1s;
-    transition: 0.5s ease; }
-  .gridGarnish .fotoGrid7:hover {
-    opacity: 0.5;
-    color: #fae9c9;
-    transition-delay: 0.1s;
-    transition: 0.5s ease; }
   .gridGarnish .fotoGrid2 {
     grid-area: fotoGrid2;
     background-image: url(https://cdn.trendhunterstatic.com/thumbs/bloody-mary.jpeg);
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; }
+  .gridGarnish .fotoGrid2:hover::after {
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .gridGarnish .fotoGrid2:hover .textoGridHover {
+    opacity: 1;
+    transition: all 2s; }
   .gridGarnish .fotoGrid3 {
     grid-area: fotoGrid3;
     background-image: url(https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/9/23/0/Original_BPF_Holiday-House_Entertaining_5-Cocktail-Garnishes_LEAD.jpg.rend.hgtvcom.966.725.suffix/1443025896226.jpeg);
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; }
+  .gridGarnish .fotoGrid3:hover::after {
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .gridGarnish .fotoGrid3:hover .textoGridHover {
+    opacity: 1;
+    transition: all 2s; }
   .gridGarnish .fotoGrid4 {
     grid-area: fotoGrid4;
     background-image: url(https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2010/12/29/0/Original_Fine-Living-Cocktails-Cool-Cubama-2_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1400958982743.jpeg);
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; }
+  .gridGarnish .fotoGrid4:hover::after {
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .gridGarnish .fotoGrid4:hover .textoGridHover {
+    opacity: 1;
+    transition: all 2s; }
   .gridGarnish .fotoGrid5 {
     grid-area: fotoGrid5;
     background-image: url(https://www.liquor.com/thmb/eQlWQiNJ-4EiL9VkUzrDkLfHtS4=/735x0/garnish-720x720-98106bdab16c47c4a3d11c52cb1f1f4d.jpg);
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; }
+  .gridGarnish .fotoGrid5:hover::after {
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .gridGarnish .fotoGrid5:hover .textoGridHover {
+    opacity: 1;
+    transition: all 2s; }
   .gridGarnish .fotoGrid6 {
     grid-area: fotoGrid6;
     background-image: url(https://images.food52.com/0rpH5FC38G6munjSHgIIV-OCwNw=/60e320db-f332-4284-9dd6-d471594912a3--14796465799_0cc559cbc2_b.jpg);
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; }
+  .gridGarnish .fotoGrid6:hover::after {
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .gridGarnish .fotoGrid6:hover .textoGridHover {
+    opacity: 1;
+    transition: all 2s; }
   .gridGarnish .fotoGrid7 {
     grid-area: fotoGrid7;
     background-image: url(https://dg38gzoej82xh.cloudfront.net/sites/default/files/styles/image_gallery_xl/public/images/node/article/22-different-cocktails-garnishes.jpg?itok=O5fN3kze);
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; }
+  .gridGarnish .fotoGrid7:hover::after {
+    color: #fae9c9;
+    transition-delay: 0.1s;
+    transition: 0.5s ease;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .gridGarnish .fotoGrid7:hover .textoGridHover {
+    opacity: 1;
+    transition: all 2s; }
 
 .gridIndex {
   display: flex;
@@ -388,12 +490,7 @@ a {
   grid-template-columns: 220px 220px 220px 220px 220px;
   grid-template-rows: 220px 220px 220px 220px 220px 220px;
   gap: 6vw 8vh;
-  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index"
- "foto1Index foto1Index foto1Index texto1Index texto1Index"
- "foto1Index foto1Index foto1Index texto1Index texto1Index"
- "texto2Index texto2Index foto2Index foto2Index foto2Index"
- "texto2Index texto2Index foto2Index foto2Index foto2Index"
- "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
+  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
 
 .foto1Index {
   grid-area: foto1Index;
@@ -418,5 +515,3 @@ a {
   background-color: rgba(0, 19, 8, 0.678);
   background-position: center;
   background-size: cover; }
-
-  
