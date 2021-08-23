@@ -515,3 +515,15 @@ a {
   background-color: rgba(0, 19, 8, 0.678);
   background-position: center;
   background-size: cover; }
+
+@media only screen and (max-width: 567px) {
+  .gridIndex {
+    display: block; }
+  .gridGarnish {
+    display: block; }
+  .menuPrincipal {
+    display: block;
+    align-items: right;
+    max-width: 100px; }
+  .headerCursos {
+    display: block; } }
