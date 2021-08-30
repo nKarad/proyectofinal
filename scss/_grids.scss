@@ -96,8 +96,8 @@
   display: flex;
   justify-content: center;
   display: grid;
-  grid-template-columns: 40vh 24vh 24vh 27vh 27vh;
-  grid-template-rows: 27vw 9vw 9vw;
+  grid-template-columns: 60vh 24vh 24vh 27vh 27vh;
+  grid-template-rows: 24vw 7vw 7vw;
   grid-template-areas:
     "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6"
     "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6"
@@ -105,7 +105,7 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 
   .fotoGrid1 {
     grid-area: fotoGrid1;
@@ -365,7 +365,9 @@
 }
 
 .infoGrid {margin-left: 3vh;}
+
 .infoInternaGrid {margin-left:  1vw; margin-right: 1vw; font-size: 50%;}
+
 .textoIndex {font-size: 3vh;margin: 2%;}
 
 .foto1Index {

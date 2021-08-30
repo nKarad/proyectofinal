@@ -289,13 +289,13 @@ a {
   display: flex;
   justify-content: center;
   display: grid;
-  grid-template-columns: 40vh 24vh 24vh 27vh 27vh;
-  grid-template-rows: 27vw 9vw 9vw;
+  grid-template-columns: 60vh 24vh 24vh 27vh 27vh;
+  grid-template-rows: 24vw 7vw 7vw;
   grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 1rem; }
   .gridGarnish .fotoGrid1 {
     grid-area: fotoGrid1;
     background-image: url(https://images.squarespace-cdn.com/content/v1/5402e23ce4b0a7034afad3a2/1558515375264-KUVECOQDI4J7BVKVRJJC/Gin%2BTonic%2BGarnishes.png);
