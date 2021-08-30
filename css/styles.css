@@ -213,8 +213,8 @@ a {
   color: white; }
 
 .estiloCarta {
-  padding: 5%;
-  padding-left: 15%;
+  padding-top: 2rem;
+  justify-items: center;
   display: flex; }
   .estiloCarta .card {
     width: 35rem;
@@ -289,12 +289,13 @@ a {
   display: flex;
   justify-content: center;
   display: grid;
-  grid-template-columns: 350px 185px 185px 215px 215px;
-  grid-template-rows: 350px 185px 185px;
+  grid-template-columns: 40vh 24vh 24vh 27vh 27vh;
+  grid-template-rows: 27vw 9vw 9vw;
   grid-template-areas: "fotoGrid1 fotoGrid1 fotoGrid1 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid3 fotoGrid3 fotoGrid6 fotoGrid6" "fotoGrid2 fotoGrid4 fotoGrid5 fotoGrid7 fotoGrid7";
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
   .gridGarnish .fotoGrid1 {
     grid-area: fotoGrid1;
     background-image: url(https://images.squarespace-cdn.com/content/v1/5402e23ce4b0a7034afad3a2/1558515375264-KUVECOQDI4J7BVKVRJJC/Gin%2BTonic%2BGarnishes.png);
@@ -487,10 +488,22 @@ a {
   justify-content: center;
   display: grid;
   margin-top: 10vh;
-  grid-template-columns: 220px 220px 220px 220px 220px;
-  grid-template-rows: 220px 220px 220px 220px 220px 220px;
-  gap: 6vw 8vh;
-  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
+  grid-template-columns: 20vh 20vh 20vh 25vh 25vh;
+  grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh;
+  gap: 8vw 8vh;
+  grid-template-areas: "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index" "foto1Index foto1Index foto1Index texto1Index texto1Index"     "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index" "texto2Index texto2Index foto2Index foto2Index foto2Index"; }
+
+.infoGrid {
+  margin-left: 3vh; }
+
+.infoInternaGrid {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-size: 50%; }
+
+.textoIndex {
+  font-size: 3vh;
+  margin: 2%; }
 
 .foto1Index {
   grid-area: foto1Index;
