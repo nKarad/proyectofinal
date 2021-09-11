@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -32,16 +33,6 @@ h1 {
 h2 {
   font-weight: 600;
   font-family: "Montserrat", sans-serif; }
-
-footer {
-  width: 100%;
-  background-color: #0e0d0d;
-  margin-top: auto;
-  color: white;
-  text-align-last: right;
-  padding-right: 10px;
-  height: auto;
-  margin-bottom: 7px; }
 
 main {
   padding-top: 80px; }
@@ -211,6 +202,43 @@ a {
 
 .submit {
   color: white; }
+
+​
+footer {
+  margin: 0;
+  padding: 1.5rem; }
+  ​
+footer ​
+ul {
+    display: flex;
+    justify-content: space-around; }
+  ​
+footer ​
+li {
+    list-style-type: none;
+    width: 3rem;
+    height: 3rem; }
+
+​
+.redes {
+  transition: width 0.3s, height 0.3s, transform 2s; }
+
+​
+.redes:hover {
+  width: 3rem;
+  height: 3rem; }
+
+​
+​
+footer {
+  background-image: linear-gradient(to right, silver, gray);
+  font-family: 'Montserrat', sans-serif; }
+  ​
+​
+footer ​
+p {
+    color: black;
+    text-align: center; }
 
 .estiloCarta {
   padding-top: 2rem;
@@ -540,3 +568,40 @@ a {
     max-width: 100px; }
   .headerCursos {
     display: block; } }
+
+​
+footer {
+  margin: 0;
+  padding: 1.5rem; }
+  ​
+footer ​
+ul {
+    display: flex;
+    justify-content: space-around; }
+  ​
+footer ​
+li {
+    list-style-type: none;
+    width: 3rem;
+    height: 3rem; }
+
+​
+.redes {
+  transition: width 0.3s, height 0.3s, transform 2s; }
+
+​
+.redes:hover {
+  width: 3rem;
+  height: 3rem; }
+
+​
+​
+footer {
+  background-image: linear-gradient(to right, silver, gray);
+  font-family: 'Montserrat', sans-serif; }
+  ​
+​
+footer ​
+p {
+    color: black;
+    text-align: center; }
